@@ -41,7 +41,7 @@ function play()
   song.play();
   song.volume = 1;
 
-  since = parseInt(Date.now() - start + 100000, 10);
+  since = parseInt(Date.now() - start, 10);
 
   var months  = getMonths();
   var days    = getDays();
