@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+#viewport {
+  position: absolute;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: #181818;
+  animation-name: colour;
+  animation-duration: 90s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+.panel {
+  display: none;
+}
+
+.panel.active {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  padding: 1rem;
+  background-color: #181818;
+  border: 2px solid #282828;
+}
+
+span {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: #C6C6C6;
+}
+
+span.title {
+  font-size: 2em;
+  font-weight: 700;
+  padding-bottom: 0.75rem;
+}
+
+span.time {
+  font-size: 1.75em;
+  text-align: center;
+}
+
+audio {
+  box-shadow: none;
+}
+
+@keyframes colour {
+  9% {
+    background-color: #cc2222;
+  }
+  18% {
+    background-color: #704418;
+  }
+  27% {
+    background-color: #ff4444;
+  }
+  36% {
+    background-color: #ff9933;
+  }
+  45% {
+    background-color: #fff14f;
+  }
+  54% {
+    background-color: #22cc33;
+  }
+  63% {
+    background-color: #228833;
+  }
+  72% {
+    background-color: #0066ff;
+  }
+  81% {
+    background-color: #2288cc;
+  }
+  90% {
+    background-color: #aa44ff;
+  }
+  99% {
+    background-color: #ff2bfd;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
