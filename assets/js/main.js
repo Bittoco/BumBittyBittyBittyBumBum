@@ -50,19 +50,19 @@ function play()
   var seconds = getSeconds().toFixed(2);
 
   document.getElementById('months').innerHTML = 
-    (months >= 1 || months < 2) 
+    (months >= 1 && months < 2)
     ? months + " Month."
     : months + " Months.";
   document.getElementById('days').innerHTML = 
-    (days >= 1 || days < 2)
+    (days >= 1 && days < 2)
       ? days + " Day, and "
       : days + " Days, and ";
   document.getElementById('hours').innerHTML = 
-    (hours >= 1 || hours < 2) 
+    (hours >= 1 && hours < 2) 
       ? hours + " Hour, "
       : hours + " Hours, ";
   document.getElementById('minutes').innerHTML = 
-    (minutes >= 1 || minutes < 2)
+    (minutes >= 1 && minutes < 2)
       ? minutes + " Minute, "
       : minutes + " Minutes, ";
   document.getElementById('seconds').innerHTML = 
